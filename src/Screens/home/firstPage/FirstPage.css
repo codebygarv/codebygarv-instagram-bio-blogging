@@ -1,0 +1,280 @@
+body {
+    font-family: "Nunito", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000000;
+    color: #ffffff;
+    position: relative;
+    padding: 2rem;
+}
+
+/* Heading */
+.main-heading {
+    font-size: 9rem;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.main-heading::after {
+    content: "2025";
+    font-size: 3rem;
+    color: #a8b3ff;
+    position: absolute;
+    top: 10%;
+    right: -4rem;
+    transform: rotate(-10deg);
+}
+
+/* Role Container */
+.role-container {
+    background-color: #1f1f1f;
+    padding: 0.5rem 2rem;
+    border-radius: 50px;
+    margin-top: 1rem;
+    border: 2px solid #a8b3ff;
+    font-size: 1.5rem;
+    color: #a8b3ff;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    position: relative;
+}
+
+.role-container::before,
+.role-container::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #a8b3ff;
+}
+
+.role-container::before {
+    top: -10px;
+    left: -10px;
+}
+
+.role-container::after {
+    bottom: -10px;
+    right: -10px;
+}
+
+/* Name Text */
+.name-text {
+    font-size: 1.8rem;
+    color: #a8b3ff;
+    margin-top: 1rem;
+    font-style: italic;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+}
+
+.name-text::after {
+    content: "💭";
+    font-size: 2rem;
+    margin-left: 0.5rem;
+    color: #a8b3ff;
+}
+
+/* Arrow */
+.arrow {
+    font-size: 2rem;
+    color: #a8b3ff;
+    position: absolute;
+    top: 22%;
+    right: 5%;
+    transform: rotate(15deg);
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0) rotate(15deg);
+    }
+    50% {
+        transform: translateY(-10px) rotate(15deg);
+    }
+}
+
+/* Minimalistic Designs */
+.minimal-design {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.line {
+    width: 100px;
+    height: 2px;
+    background-color: #a8b3ff;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #a8b3ff;
+    border-radius: 50%;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #a8b3ff, #ffffff);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #a8b3ff, #a8b3ff);
+}
+
+::-webkit-scrollbar-track {
+    background: #121212;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .main-heading {
+        font-size: 5rem;
+        text-align: center;
+    }
+
+    .main-heading::after {
+        font-size: 2rem;
+        right: -2rem;
+    }
+
+    .role-container {
+        padding: 0.5rem 1.5rem;
+        font-size: 1.3rem;
+    }
+
+    .name-text {
+        font-size: 1.4rem;
+        right: 5%;
+        text-align: center;
+    }
+
+    .arrow {
+        font-size: 1.6rem;
+        right: 5%;
+    }
+
+    .minimal-design {
+        bottom: 2%;
+        left: 2%;
+        gap: 0.5rem;
+    }
+
+    .line {
+        width: 80px;
+    }
+
+    .dot {
+        width: 8px;
+        height: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-heading {
+        font-size: 3.5rem;
+        text-align: center;
+        letter-spacing: 0.05em;
+    }
+
+    .main-heading::after {
+        font-size: 2rem;
+        right: -1rem;
+    }
+
+    .role-container {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+
+    .name-text {
+        font-size: 1.2rem;
+       
+        right: 0;
+        text-align: center;
+    }
+
+    .arrow {
+        font-size: 1.2rem;
+        right: 0;
+    }
+
+    .minimal-design {
+        bottom: 2%;
+        left: 50%;
+        transform: translateX(-50%);
+        gap: 0.3rem;
+    }
+
+    .line {
+        width: 60px;
+    }
+
+    .dot {
+        width: 6px;
+        height: 6px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .main-heading {
+        font-size: 10rem;
+    }
+
+    .role-container {
+        padding: 0.5rem 2rem;
+        font-size: 1.7rem;
+    }
+
+    .name-text {
+        font-size: 2rem;
+        top: 20%;
+        right: 10%;
+    }
+
+    .arrow {
+        font-size: 2.5rem;
+        top: 22%;
+        right: 5%;
+    }
+
+    .minimal-design {
+        bottom: 5%;
+        left: 5%;
+        gap: 1rem;
+    }
+
+    .line {
+        width: 100px;
+    }
+
+    .dot {
+        width: 10px;
+        height: 10px;
+    }
+}

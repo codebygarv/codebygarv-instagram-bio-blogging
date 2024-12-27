@@ -1,0 +1,21 @@
+/* Footer styles */
+.footer {
+    background-color: #121212;
+    padding: 20px;
+    text-align: center;
+    color: #a8b3ff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-text {
+    font-size: 1rem;
+    font-weight: bold;
+}

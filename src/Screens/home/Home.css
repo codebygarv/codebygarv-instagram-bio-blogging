@@ -1,0 +1,14 @@
+body {
+    /* background-color: #03030303; */
+}
+
+.main-home-content {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}

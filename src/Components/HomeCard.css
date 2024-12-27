@@ -1,0 +1,129 @@
+.home-card {
+    background-color: #1f1f1f;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 350px; 
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 15px;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-card:hover {
+    transform: scale(1.05); 
+}
+
+.image-container {
+    width: 100%;
+    height: 350px; 
+    /* overflow: hidden; */
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    font-size: 1.3rem; 
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.description {
+    font-size: 0.9rem; 
+    margin-bottom: 12px;
+    color: #a8b3ff;
+}
+
+
+.view-button {
+    padding: 8px 16px;
+    background-color: #a8b3ff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem; 
+    transition: background-color 0.3s;
+    width: fit-content;
+}
+
+.view-button:hover {
+    background-color: #9ca7e9;
+}
+
+.view-button-url{
+    text-decoration: none;
+    color: #fff;
+}
+
+@media (max-width: 1024px) {
+    .home-card {
+        width: 75%; 
+        margin: 10px auto; 
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .description {
+        font-size: 0.85rem;
+    }
+
+    .view-button {
+        font-size: 0.85rem;
+        padding: 7px 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-card {
+        width: 85%; 
+        margin: 8px auto;
+    }
+
+    .title {
+        font-size: 1.1rem;
+    }
+
+    .description {
+        font-size: 0.8rem;
+    }
+
+    .view-button {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-card {
+        width: 95%; 
+        margin: 5px auto;
+    }
+
+    .title {
+        font-size: 1rem; 
+    }
+
+    .description {
+        font-size: 0.75rem;
+    }
+
+    .view-button {
+        font-size: 0.75rem; 
+        padding: 5px 10px; 
+    }
+}
