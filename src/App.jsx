@@ -1,10 +1,10 @@
 import React from 'react'
-import DefaultLayout from './layout/DefaultLayout'
+import Home from './Screens/home/Home'
 
 const App = () => {
   return (
     <div>
-      <DefaultLayout />
+      <Home />
     </div>
   )
 }
